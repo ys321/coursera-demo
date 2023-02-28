@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #272727;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .line {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border-bottom: 4px solid #fff;
+            border-radius: 50%;
+            animation: linerotate 3s linear infinite;
+        }
+
+        /*.circle {
+            width: 50px;
+            height: 50px;
+            background-color: #fff;
+            border-radius: 50%;
+            position: absolute;
+            left:0;
+            
+            top:70px;
+            
+
+        }
+*/
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  animation: rotate 3s linear infinite;
+  transform-origin: 78px 78px;
+}
+
+       /* @keyframes rotate {
+            0% {
+                
+                left:0;
+                transform: rotate(0deg);
+            }
+
+            50% {
+                
+                left: calc(100% - 50px);
+                transform: rotate(45deg);
+            }
+
+            100% {
+                top:0;
+                left: 0;
+                transform: rotate(0deg);
+               
+            }
+        }
+*/
+@keyframes rotate {
+
+    100% {
+    transform: rotate(1turn);
+  }
+ 
+}
+
+        @keyframes linerotate {
+            0% {
+              transform: rotate(0deg);
+            }
+            50% {
+                transform: rotate(45deg);
+            }
+            100% {
+                transform: rotate(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="line">
+        <div class="circle"></div>
+    </div>
+</body>
+</html>
